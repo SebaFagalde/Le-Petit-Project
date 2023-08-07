@@ -103,6 +103,7 @@ body {
     margin: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; 
+    text-decoration: none;
   }
   
   .card img {
@@ -120,13 +121,22 @@ body {
     left: 0; 
     padding: 20px;
     color: #030303c5;
+    text-decoration: none;
+    text-decoration: none;
   }
   
+  .card-content a{
+    color: black;
+    text-decoration: none;
+    list-style: none; 
+  }
   .card-content h2 {
     display: flex;
+    color: black;
     font-size: 40px;
     justify-content: center;
     margin-bottom: 20px;
+    text-decoration: none;
 
   }
   .card:hover {
@@ -368,6 +378,17 @@ button:hover {
 
 .texto-nosotros p {
   font-size: 16px; 
+}
+
+.lista--productos{
+  list-style: none;
+}
+.container-nosotros h2{
+  margin-top: 20px;
+  margin-left: 20px;
+  color: black;
+  text-decoration: double;
+  list-style: none;
 }
 
 @media screen and (max-width: 720px) {
