@@ -3,8 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/magdalena.png" type="image/x-icon">
-    
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Le Petit Cake - Ubicacion</title>
@@ -13,13 +12,14 @@
 <body>
   <nav class="navbar--lepetit">
     <div class="container--lepetit">
-      <img class="imagen__logo" src="../assets/ImagenesLePetit/Ellipse 1.svg" alt="logo de la marca">
+      <img class="imagen__logo"src="/Le-Petit-Project/assets/ImagenesLePetit/Ellipse 1.svg" onclick="toggleMenu()"alt="logo de la marca">
       <ul class="nav-links--lepetit">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./nosotros.html">Nosotros</a></li>
         <li><a href="./productos.html">Productos</a></li>
         <li><a href="./ubicacion.html">Ubicación</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
+      
       </ul>
     </div>
   </nav>
@@ -29,8 +29,8 @@
       <h2>Ubicación</h2>
       <p>Gob. Balcarce 1576, Lanus Oeste</p>
       <button>Mostrar en el Mapa</button>
-    </div>
-    <div class="mapa">
+      </div>
+      <div class="mapa">
       <img src="../assets/ImagenesLePetit/Sin título.png" alt="mapa de donde esta Le Petit Cake">
       </div>
      </div>
@@ -38,8 +38,8 @@
   <footer>
     <div class="footer-container">
       <ul class="footer-links">
-        <img class="imagen__logo"src="./assets/ImagenesLePetit/Ellipse 1.svg" alt="logo de la marca">
-        <li><a href="./index.html">Inicio</a></li>
+        <img class="imagen__logo" src="../assets/ImagenesLePetit/Ellipse 1.svg" alt="logo de la marca">
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="https://www.instagram.com/lepetitcakearg/">Instagram</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=100094531457918">Facebook</a></li>
        </ul>
@@ -49,6 +49,12 @@
       </div>
     </div>
   </footer>
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>-->
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      function toggleMenu() {
+      var navLinks = document.querySelector(".nav-links--lepetit");
+      navLinks.classList.toggle("active");
+      }  
+    </script>
+  </body>
 </html>

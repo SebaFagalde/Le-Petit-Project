@@ -257,23 +257,23 @@ textarea {
 
 button {
   font-family: 'Inter', sans-serif;
-  width: 100%;
+  width: auto;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #f1deda;
+  color: #def2f7;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff9abd;
 }
 .map-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: auto;
+  align-items: center;  
+  margin-top: 150px;
   height: 100vh;
 }
 
@@ -325,4 +325,40 @@ button:hover {
 }
 .contacto--lepetit h1{
   margin-top: 80px;
+}
+@media screen and (max-width: 720px) {
+  .container--lepetit {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido en el margen derecho */
+    position: relative;
+  }
+
+  .nav-links--lepetit {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los enlaces en el margen derecho */
+    display: none;
+    position: absolute;
+    top: 70px; /* Espacio para la altura de la barra de navegación */
+    right: 0;
+    background-color: #f0f0f005;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links--lepetit.active {
+    display: flex;
+    
+  }
+
+  .nav-links--lepetit li {
+    margin: 10px 0;
+    color: black;
+  }
+.imagen__logo {
+  height: 200px;
+  width: 200px;
+}
+.imagen__logo:hover {
+  transform: translateX(-5);
+}
 }
