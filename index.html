@@ -81,7 +81,14 @@
     function toggleMenu() {
     var navLinks = document.querySelector(".nav-links--lepetit");
     navLinks.classList.toggle("active");
-} 
+    };
+  </script>
+  <script>
+    const logo = document.getElementById('logo');
+  
+       logo.addEventListener('click', () => {
+      logo.style.display = 'none';
+    });
   </script>
  </body>
 </html>
