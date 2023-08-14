@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap");
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 body {
   background: rgb(255, 154, 189);
   background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
@@ -346,6 +356,7 @@ button:hover {
 }
 
 .contenedor--nosotros {
+  animation: myAnim 1s ease 0s 1 normal forwards;
   display: flex;
   align-items: flex-start;
   padding-top: 140px;
@@ -431,6 +442,7 @@ button:hover {
   .imagen__logo {
     height: 100px;
     width: 100px;
+    animation: imagen__logo 3s ease 5s 1 normal both;
   }
   .imagen__logo:hover {
     transform: translateY(-4);
@@ -439,6 +451,15 @@ button:hover {
 .hero-content--lepetit h1 {
   font-size: 60px;
   margin-top: 60px;
+}
+
+@keyframes imagen__logo {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
