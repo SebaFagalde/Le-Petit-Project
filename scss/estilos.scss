@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap');
 $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
-$fondo-cuerpo: rgb(255,154,189) linear-gradient(90deg, rgba(255,154,189,1) 0%, rgba(222,242,247,1) 71%);
+$fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, rgba(255,154,189,1) 99%);
 body {
     background: rgb(255,154,189);
     background: $fondo-cuerpo;
@@ -397,8 +397,7 @@ button:hover {
 }
 
 .body_lepetit_productos{
-    background: rgb(255,154,189);
-    background: linear-gradient(90deg, rgba(255,154,189,1) 0%, rgba(222,242,247,1) 71%);
+    background: $fondo-cuerpo;
 }
 @media screen and (max-width: 720px) {
   .container--lepetit {

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap");
 body {
   background: rgb(255, 154, 189);
-  background: rgb(255, 154, 189) linear-gradient(90deg, rgb(255, 154, 189) 0%, rgb(222, 242, 247) 71%);
+  background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
@@ -11,7 +11,7 @@ body {
 }
 
 .cuerpo--contacto {
-  background: rgb(255, 154, 189) linear-gradient(90deg, rgb(255, 154, 189) 0%, rgb(222, 242, 247) 71%);
+  background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
 }
 
 .header {
@@ -217,14 +217,14 @@ footer {
 }
 
 .main--contacto {
-  background: rgb(255, 154, 189) linear-gradient(90deg, rgb(255, 154, 189) 0%, rgb(222, 242, 247) 71%);
+  background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
 }
 
 .body--contacto {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(255, 154, 189) linear-gradient(90deg, rgb(255, 154, 189) 0%, rgb(222, 242, 247) 71%);
+  background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,8 +399,7 @@ button:hover {
 }
 
 .body_lepetit_productos {
-  background: rgb(255, 154, 189);
-  background: linear-gradient(90deg, rgb(255, 154, 189) 0%, rgb(222, 242, 247) 71%);
+  background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
 }
 
 @media screen and (max-width: 720px) {
