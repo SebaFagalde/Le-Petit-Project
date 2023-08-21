@@ -3,6 +3,7 @@
 $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
 $fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, rgba(255,154,189,1) 99%);
+
 body {
     background: rgb(255,154,189);
     background: $fondo-cuerpo;
@@ -48,13 +49,13 @@ body {
   }
   
   .nav-links--lepetit li {
-    padding: 10px;
+    padding: 15px;
   }
   
   .nav-links--lepetit a {
     color: #ffffffe3;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
   }
   
   
@@ -95,8 +96,8 @@ body {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; 
+    justify-content: center;  
+    gap: 5px; 
     padding: 20px;
   }
   
@@ -124,7 +125,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0; 
-    padding: 20px;
+    padding: 15px;
     color: #030303c5;
     text-decoration: none;
     text-decoration: none;
@@ -286,7 +287,6 @@ button:hover {
 }
 .map-container {
   display: flex;
-  background-image: url("../assets/ImagenesLePetit/Perfect\ Lemon\ Cupcakes\ Recipe!\ -\ Crazy\ for\ Crust.png");
   height: cover;
   justify-content: center;
   align-items: center;  
@@ -344,6 +344,7 @@ button:hover {
   margin-top: 80px;
 }
 .contenedor--nosotros {
+  animation: myAnim 1s ease 0s 1 normal forwards;
   display: flex;
   align-items: flex-start;
   padding-top: 140px;
@@ -399,7 +400,56 @@ button:hover {
 .body_lepetit_productos{
     background: $fondo-cuerpo;
 }
+.imagen-titulo{
+  width: 50px; 
+  height: auto;
+  margin-left: 400px;
+  
+}
+.imagen-titulo2{
+  width: 100px; 
+  height: auto; 
+  margin-left: 800px;
+}
+.imagen-titulo3{
+  width: 150px; 
+  height: auto; 
+  margin-left: 750px;
+}
+.titulo-historia{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+.parrafo-historia{
+padding-bottom: 50px;
+  
+}
+
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos {
+  
+  list-style: none; 
+  padding: 0; 
+  margin-left: 20px; 
+  display: flex;
+  flex-direction: column; 
+}
+
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos li {
+  border: none; 
+  padding: 10px 0; 
+    &:hover, &.active {
+    cursor: pointer;
+    box-shadow: inset;
+    }
+  }
+  .dos-lineas {
+    column-count: 2; 
+    column-gap: 20px;
+  }
+
 @media screen and (max-width: 720px) {
+
   .container--lepetit {
     background-color: #ff9abd6b;
     flex-direction: column;
@@ -413,11 +463,12 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    margin-top: 40px; 
+    margin-top: 10px; 
     right: 0;
     padding: 0px;
     border-radius: 5px;
     display: none; 
+    font-size: 15px;
   }
 
   .nav-links--lepetit.active {
@@ -425,19 +476,71 @@ button:hover {
   }
 
   .nav-links--lepetit li {
-    margin: 10px 0;
+    margin: 5px 0;
     color: black;
   }
   .imagen__logo {
     height: 100px;
     width: 100px;
+    animation: imagen__logo 3s ease 5s 1 normal both;
   }
   .imagen__logo:hover {
     transform: translateY(-4);
   }
-}
-.hero-content--lepetit h1{
+
+ .hero-content--lepetit h1{
   font-size: 60px;
   margin-top: 60px;
+ }
+ .contenedor--nosotros{
+  text-align: center;
+ }
+.texto-nosotros{
+  margin-top: 10px;
+ }
+.imagen__nosotros {
+  display: none;
+  
+ }
+ @keyframes imagen__logo {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+ }
+ .lista--productos{
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  margin-left: 10px; 
 }
 
+.lista--productos li {
+  flex: 0 0 50%; 
+  padding: 10px; 
+}
+.map-container{
+  width: auto ;
+}
+.imagen-titulo{
+  width: 50px; 
+  height: auto;
+  margin-left: 150px;
+}
+.imagen-titulo2{
+  width: 75px; 
+  height: auto;
+  margin-left: 300px;
+}
+.imagen-titulo3{
+  width: 100px; 
+  height: auto;
+  margin-left: 300px;
+}
+.dos-lineas {
+  column-count: 1; 
+  column-gap: 20px;
+}
+}

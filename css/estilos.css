@@ -46,13 +46,13 @@ body {
 }
 
 .nav-links--lepetit li {
-  padding: 10px;
+  padding: 15px;
 }
 
 .nav-links--lepetit a {
   color: rgba(255, 255, 255, 0.8901960784);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .hero--lepetit {
@@ -93,7 +93,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   padding: 20px;
 }
 
@@ -121,7 +121,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
+  padding: 15px;
   color: rgba(3, 3, 3, 0.7725490196);
   text-decoration: none;
   text-decoration: none;
@@ -285,7 +285,6 @@ button:hover {
 
 .map-container {
   display: flex;
-  background-image: url("../assets/ImagenesLePetit/Perfect Lemon Cupcakes Recipe! - Crazy for Crust.png");
   height: cover;
   justify-content: center;
   align-items: center;
@@ -346,6 +345,7 @@ button:hover {
 }
 
 .contenedor--nosotros {
+  animation: myAnim 1s ease 0s 1 normal forwards;
   display: flex;
   align-items: flex-start;
   padding-top: 140px;
@@ -402,6 +402,56 @@ button:hover {
   background: rgb(222, 242, 247) linear-gradient(90deg, rgb(222, 242, 247) 25%, rgb(255, 154, 189) 99%);
 }
 
+.imagen-titulo {
+  width: 50px;
+  height: auto;
+  margin-left: 400px;
+}
+
+.imagen-titulo2 {
+  width: 100px;
+  height: auto;
+  margin-left: 800px;
+}
+
+.imagen-titulo3 {
+  width: 150px;
+  height: auto;
+  margin-left: 750px;
+}
+
+.titulo-historia {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.parrafo-historia {
+  padding-bottom: 50px;
+}
+
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos li {
+  border: none;
+  padding: 10px 0;
+}
+#TORTAS:hover, #TORTAS.active, #CUPCAKES:hover, #CUPCAKES.active, #CAFES:hover, #CAFES.active, #MACARONS:hover, #MACARONS.active, .lista--productos li:hover, .lista--productos li.active {
+  cursor: pointer;
+  box-shadow: inset;
+}
+
+.dos-lineas {
+  column-count: 2;
+  column-gap: 20px;
+}
+
 @media screen and (max-width: 720px) {
   .container--lepetit {
     background-color: rgba(255, 154, 189, 0.4196078431);
@@ -415,30 +465,80 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    margin-top: 40px;
+    margin-top: 10px;
     right: 0;
     padding: 0px;
     border-radius: 5px;
     display: none;
+    font-size: 15px;
   }
   .nav-links--lepetit.active {
     display: flex;
   }
   .nav-links--lepetit li {
-    margin: 10px 0;
+    margin: 5px 0;
     color: black;
   }
   .imagen__logo {
     height: 100px;
     width: 100px;
+    animation: imagen__logo 3s ease 5s 1 normal both;
   }
   .imagen__logo:hover {
     transform: translateY(-4);
   }
-}
-.hero-content--lepetit h1 {
-  font-size: 60px;
-  margin-top: 60px;
+  .hero-content--lepetit h1 {
+    font-size: 60px;
+    margin-top: 60px;
+  }
+  .contenedor--nosotros {
+    text-align: center;
+  }
+  .texto-nosotros {
+    margin-top: 10px;
+  }
+  .imagen__nosotros {
+    display: none;
+  }
+  @keyframes imagen__logo {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .lista--productos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+  .lista--productos li {
+    flex: 0 0 50%;
+    padding: 10px;
+  }
+  .map-container {
+    width: auto;
+  }
+  .imagen-titulo {
+    width: 50px;
+    height: auto;
+    margin-left: 150px;
+  }
+  .imagen-titulo2 {
+    width: 75px;
+    height: auto;
+    margin-left: 300px;
+  }
+  .imagen-titulo3 {
+    width: 100px;
+    height: auto;
+    margin-left: 300px;
+  }
+  .dos-lineas {
+    column-count: 1;
+    column-gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
