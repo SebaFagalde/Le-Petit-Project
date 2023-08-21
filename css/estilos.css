@@ -340,7 +340,7 @@ button:hover {
   background-color: #350513;
 }
 
-.contacto--lepetit h1 {
+.contacto--lepetit h2 {
   margin-top: 80px;
 }
 
@@ -386,10 +386,6 @@ button:hover {
   font-size: 16px;
 }
 
-.lista--productos {
-  list-style: none;
-}
-
 .container-nosotros h2 {
   margin-top: 20px;
   margin-left: 20px;
@@ -403,7 +399,7 @@ button:hover {
 }
 
 .imagen-titulo {
-  width: 50px;
+  width: 75px;
   height: auto;
   margin-left: 400px;
 }
@@ -421,18 +417,20 @@ button:hover {
 }
 
 .titulo-historia {
+  font-family: "Inter", sans-serif;
   font-size: 50px;
   text-align: center;
   margin-top: 50px;
 }
 
 .parrafo-historia {
+  font-family: "Roboto", sans-serif;
   padding-bottom: 50px;
 }
 
 #TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos {
   list-style: none;
-  padding: 0;
+  padding: 35px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
