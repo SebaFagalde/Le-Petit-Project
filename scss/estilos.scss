@@ -4,6 +4,20 @@ $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
 $fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, rgba(255,154,189,1) 99%);
 
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
 body {
     background: rgb(255,154,189);
     background: $fondo-cuerpo;
@@ -410,6 +424,7 @@ button:hover {
     background: $fondo-cuerpo;
 }
 .imagen-titulo{
+
   width: 75px; 
   height: auto;
   margin-left: 400px;
@@ -464,6 +479,13 @@ button:hover {
     column-count: 2; 
     column-gap: 20px;
   }
+=======
+  width: 100px; 
+  height: auto;
+  margin-left: 1200px
+}
+
+
 
 @media screen and (max-width: 720px) {
 
@@ -528,6 +550,7 @@ button:hover {
 		transform: rotate(360deg);
 	}
  }
+
  .lista--productos{
   flex-direction: row; 
   flex-wrap: wrap; 
@@ -599,4 +622,5 @@ h1, h3 {
 footer{
   height: 125px;
 }
+
 }
