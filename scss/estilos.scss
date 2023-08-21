@@ -4,6 +4,7 @@ $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
 $fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, rgba(255,154,189,1) 99%);
 
+
 @keyframes myAnim {
 	0% {
 		opacity: 0;
@@ -15,6 +16,7 @@ $fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, 
 		transform: translateX(0);
 	}
 }
+
 
 body {
     background: rgb(255,154,189);
@@ -171,11 +173,11 @@ footer {
   background-color: #6e6e6e;
   color: #f1deda;
   text-align: center;
-  padding: 10px;
+  padding:0px;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
 }
 
 .footer-container {
@@ -183,6 +185,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  
  }
 
 .footer-links {
@@ -208,7 +211,10 @@ footer {
 .footer-social {
   margin-top: 10px;
 }
-
+.sfmedia{
+  display: flex;
+  justify-content: center;
+}
 .social-icon {
   display: inline-block;
   width: 40px;
@@ -222,16 +228,22 @@ footer {
   margin-right: 10px;
   text-decoration: none;
 }
-
+.titulo-card h2{
+  font-family: $fuentes-titulos;
+  font-size: 34px;
+  margin-top: 20px;
+}
 .social-icon i {
   vertical-align: middle;
 }
 .contenido--lepetit {
-  margin-top: 100px; 
+  margin-top: 50px; 
 }
 
 .main--contacto{
   background: $fondo-cuerpo;
+  margin:5px;
+  margin-top: 120px;
   
 }
 .body--contacto{
@@ -240,9 +252,8 @@ footer {
   padding: 0;
   background: $fondo-cuerpo;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: auto;
+  justify-content:center;
+  align-items:flex-start;
   
 }
 
@@ -257,7 +268,7 @@ footer {
 
 h1, h3 {
   font-family: $fuentes-titulos;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
  }
@@ -352,8 +363,11 @@ button:hover {
 .map-window button:hover {
   background-color: #350513;
 }
-.contacto--lepetit h1{
-  margin-top: 80px;
+.contacto--lepetit {
+  font-family: $fuentes-titulos;
+  font-size: 20px;
+  margin  : 5px;
+  row-count: 2; 
 }
 .contenedor--nosotros {
   animation: myAnim 1s ease 0s 1 normal forwards;
@@ -398,9 +412,6 @@ button:hover {
   font-size: 16px; 
 }
 
-.lista--productos{
-  list-style: none;
-}
 .container-nosotros h2{
   margin-top: 20px;
   margin-left: 20px;
@@ -413,10 +424,67 @@ button:hover {
     background: $fondo-cuerpo;
 }
 .imagen-titulo{
+
+  width: 75px; 
+  height: auto;
+  margin-left: 400px;
+  
+}
+.imagen-titulo2{
+  width: 100px; 
+  height: auto; 
+  margin-left: 800px;
+}
+.imagen-titulo3{
+  width: 150px; 
+  height: auto; 
+  margin-left: 750px;
+}
+.titulo-historia{
+  font-family: $fuentes-titulos;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+.parrafo-historia{
+  font-family: $fuentes-cuerpo;
+ padding: 30px;
+  
+}
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, section{
+  display: flex;
+  margin: top 100px; ;
+}
+
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos {
+  
+  list-style: none; 
+  padding: 35px; 
+  margin-top: 10px;
+  margin-left: 20px; 
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 50px;
+}
+
+#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos li {
+  border: none; 
+  padding: 10px 0; 
+    &:hover, &.active {
+    cursor: pointer;
+    box-shadow: inset;
+    }
+  }
+  .dos-lineas {
+    column-count: 2; 
+    column-gap: 20px;
+  }
+=======
   width: 100px; 
   height: auto;
   margin-left: 1200px
 }
+
 
 
 @media screen and (max-width: 720px) {
@@ -482,4 +550,77 @@ button:hover {
 		transform: rotate(360deg);
 	}
  }
+
+ .lista--productos{
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  margin-left: 10px; 
+}
+h1, h3 {
+  padding-top: 20px;
+  font-family: $fuentes-titulos;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+ }
+
+.lista--productos li {
+  flex: 0 0 50%; 
+  padding: 10px; 
+}
+.map-container{
+  width: auto ;
+}
+.imagen-titulo{
+  width: 50px; 
+  height: auto;
+  margin-left: 150px;
+}
+.imagen-titulo2{
+  width: 75px; 
+  height: auto;
+  margin-left: 300px;
+}
+.imagen-titulo3{
+  width: 100px; 
+  height: auto;
+  margin-left: 300px;
+}
+.dos-lineas {
+  column-count: 1; 
+  column-gap: 20px;
+}
+.map-container{
+  display: flex;
+  flex-direction: column;
+}
+.map-window {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.mapa >img {
+  width: 400px;
+  height: 320px;
+  padding: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+}
+.parrafo-historia{
+  margin-bottom: 25px;
+  
+}
+.container--contacto {
+  max-width: 70%;
+}
+.sfmedia{
+  text-align: center;
+}
+footer{
+  height: 125px;
+}
+
 }
