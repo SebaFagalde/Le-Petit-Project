@@ -424,7 +424,6 @@ button:hover {
 }
 
 .imagen-titulo {
-
   width: 75px;
   height: auto;
   margin-left: 400px;
@@ -481,11 +480,8 @@ button:hover {
 .dos-lineas {
   column-count: 2;
   column-gap: 20px;
-
   width: 100px;
   height: auto;
-  margin-left: 1200px;
-
 }
 
 @media screen and (max-width: 720px) {
@@ -544,7 +540,6 @@ button:hover {
       transform: rotate(360deg);
     }
   }
-
   .lista--productos {
     flex-direction: row;
     flex-wrap: wrap;
@@ -614,8 +609,6 @@ button:hover {
   footer {
     height: 125px;
   }
-
-
 }
 
 /*# sourceMappingURL=estilos.css.map */
