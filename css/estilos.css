@@ -451,6 +451,8 @@ button:hover {
 .parrafo-historia {
   font-family: "Roboto", sans-serif;
   padding: 30px;
+  column-count: 2;
+  column-gap: 20px;
 }
 
 #TORTAS, #CUPCAKES, #CAFES, #MACARONS, section {
@@ -599,6 +601,8 @@ button:hover {
   }
   .parrafo-historia {
     margin-bottom: 25px;
+    column-count: 2;
+    column-width: 100px;
   }
   .container--contacto {
     max-width: 70%;
