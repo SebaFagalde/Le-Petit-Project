@@ -166,7 +166,7 @@ body {
 
 footer {
   font-family: "Roboto", sans-serif;
-  font-size: medium;
+  font-size: 20px;
   background-color: #6e6e6e;
   color: #f1deda;
   text-align: center;
@@ -380,7 +380,6 @@ button {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   margin: 5px;
-  row-count: 2;
 }
 
 .contenedor--nosotros {
@@ -408,8 +407,8 @@ button {
   justify-content: center;
   width: auto;
   padding-top: 10px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-bottom: 10px;
   padding-left: 20px;
   gap: 20px;
 }
@@ -512,7 +511,7 @@ button {
 
 @media screen and (max-width: 720px) {
   .container--lepetit {
-    background-color: rgba(255, 154, 189, 0.4196078431);
+    background-color: #ff9abd;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -625,7 +624,7 @@ button {
   }
   .parrafo-historia {
     margin-bottom: 25px;
-    column-count: 2;
+    column-count: 1;
     column-width: 100px;
   }
   .container--contacto {
@@ -635,7 +634,13 @@ button {
     text-align: center;
   }
   footer {
-    height: 125px;
+    height: auto;
+  }
+  .titulo-contacto {
+    font-family: "Inter", sans-serif;
+    color: #6e6e6e;
+    font-weight: bold;
+    font-size: 35px;
   }
 }
 

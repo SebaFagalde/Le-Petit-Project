@@ -174,7 +174,7 @@ body {
 
 footer {
   font-family: $fuentes-cuerpo;
-  font-size: medium;
+  font-size: 20px;
   background-color: #6e6e6e;
   color: #f1deda;
   text-align: center;
@@ -383,8 +383,7 @@ button{
   font-family: $fuentes-titulos;
   font-size: 20px;
   margin  : 5px;
-  row-count: 2; 
-}
+ }
 .contenedor--nosotros {
   animation: myAnim 1s ease 0s 1 normal forwards;
   display: flex;
@@ -409,8 +408,8 @@ button{
   justify-content: center;
   width: auto;
   padding-top: 10px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-bottom: 10px;
   padding-left: 20px;
   gap: 20px;
   
@@ -515,7 +514,7 @@ button{
 @media screen and (max-width: 720px) {
 
   .container--lepetit {
-    background-color: #ff9abd6b;
+    background-color: #ff9abd;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -636,7 +635,7 @@ h1, h3 {
 }
 .parrafo-historia{ 
   margin-bottom: 25px;
-  column-count: 2;
+  column-count: 1;
   column-width: 100px;
   
 }
@@ -647,7 +646,13 @@ h1, h3 {
   text-align: center;
 }
 footer{
-  height: 125px;
+  height: auto;
 }
+.titulo-contacto{
+  font-family: $fuentes-titulos;
+  color: #6e6e6e;
+  font-weight: bold;
+  font-size: 35px;
 
+}
 }
