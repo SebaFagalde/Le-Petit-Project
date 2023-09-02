@@ -539,6 +539,10 @@ button {
     width: 90px;
     animation: imagen__logo 3s ease 5s 1 normal both;
   }
+  .bondades-section {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
   .hero-content--lepetit h1 {
     font-size: 60px;
     margin-top: 60px;
@@ -603,7 +607,7 @@ button {
     margin: 20px;
   }
   .parrafo-historia {
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     column-count: 1;
     column-width: 100px;
   }
@@ -643,6 +647,27 @@ button {
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container--lepetit {
+    background-color: #ff9abd;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .nav-links--lepetit {
+    background-color: rgba(240, 240, 240, 0.5333333333);
+    color: black;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 10px;
+    right: 0;
+    padding: 0px;
+    border-radius: 5px;
+    display: none;
+    font-size: 15px;
   }
 }
 
