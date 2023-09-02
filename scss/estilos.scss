@@ -4,6 +4,12 @@ $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
 $fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, rgba(255,154,189,1) 99%);
 $primary: #ff9abd;
+$carousel-control-width:             10%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+$carousel-caption-width:  35%;
+
 @mixin titulos{
   font-family: $fuentes-titulos;
   color: #6e6e6e;
@@ -24,6 +30,7 @@ $primary: #ff9abd;
 		transform: translateX(0);
 	}
 }
+/*css del body*/
 body {
     background: rgb(255,154,189);
     background: $fondo-cuerpo;
@@ -38,6 +45,7 @@ body {
     background: $fondo-cuerpo;
     
   }
+  /*css de la navbar*/
   .header{
     position: sticky;
   }
@@ -52,7 +60,7 @@ body {
   .container--lepetit {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -392,15 +400,14 @@ button{
   animation: myAnim 1s ease 0s 1 normal forwards;
   display: flex;
   align-items: flex-start;
-  padding-top: 20px;
+  padding-top: 140px;
   padding-left: 5px;
 }
 .main--nosotros {
-  padding-top: 30px;
-  padding-bottom: 20px    ;
+  padding-top: 45px;
   display: flex;
-  justify-content: nowrap;
-
+  flex-direction: column;
+ 
 }
 .imagen__nosotros { 
   max-width: 617px; 
@@ -408,10 +415,10 @@ button{
   display: flex;
     
 }
-.texto-nosotros p{
+.texto-nosotros {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: auto;
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 10px;
@@ -427,10 +434,11 @@ button{
   @include titulos();
   display: flex;
   justify-content:center;
-  margin-top: 20%;
+padding-top: 15%;
 }
 .main--nosotros>h2 {
   display: flex;
+  flex-direction: row;
   padding-top: 45px;
   padding-left: 20px;
   font-size: 60px; 
@@ -440,16 +448,20 @@ button{
   font-size: 16px; 
 }
 
-.container-productos h2{
+.container-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin-top: 20px;
-  margin-left: 20px;
-  color: black;
-  text-decoration: double;
-  list-style: none;
+  margin-right: 25%;
+  margin-left: 20%;
+  padding-bottom: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .body_lepetit_productos{
-    background: $fondo-cuerpo;
+  background: $fondo-cuerpo;
 }
 .imagen-titulo{
   width: 75px; 
@@ -462,7 +474,7 @@ button{
   height: auto; 
   margin-left: 800px;
 }
-.imagen-titulo3{
+.imagen-itulo3{
   width: 150px; 
   height: auto; 
   margin-left: 750px;
@@ -477,47 +489,22 @@ button{
   padding: 30px;
   column-count: 2;
   column-gap: 20px;
-
-  
-}
-#TORTAS, #CUPCAKES, #CAFES, {
-  display: flex;
-  margin-top: 100px; 
-  margin-bottom: 100px;
-}
-
-#TORTAS, #CUPCAKES, #CAFES, .lista--productos {
-  
-  list-style: none; 
-  padding: 35px; 
-  margin-top: 10px;
-  margin-left: 20px; 
-  display: flex;
-  flex-direction: column; 
-  margin-bottom: 50px;
-}
-
-#TORTAS, #CUPCAKES, #CAFES, .lista--productos li {
-  border: none; 
-  padding: 0px 0; 
-    &:hover, &.active {
-    cursor: pointer;
-    box-shadow: inset;
-    }
-  }
-  .dos-lineas {
-    column-count: 2; 
-    column-gap: 20px;
 }
 .bondades-section{
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
+ 
 }
 
 .imagen-listadoLPC {
+  display: flex;
+  align-items: center;
   padding-top: 10%;
   padding-bottom: 5%;
 }
+
+
+/*arrancan las media queries*/
 
 @media screen and (max-width: 720px) {
 
@@ -547,17 +534,16 @@ button{
   }
 
   .nav-links--lepetit li {
-    margin: 5px 0;
+    margin: 0px 0;
     color: black;
   }
   .imagen__logo {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     animation: imagen__logo 3s ease 5s 1 normal both;
   }
-  .imagen__logo:hover {
-    transform: translateY(-4);
-  }
+  
+  
 .hero-content--lepetit h1{
   font-size: 60px;
   margin-top: 60px;
@@ -601,41 +587,27 @@ h1, h3 {
 }
 .map-container{
   width: auto ;
-}
-.imagen-titulo{
-  width: 50px; 
-  height: auto;
-  margin-left: 150px;
-}
-.imagen-titulo2{
-  width: 75px; 
-  height: auto;
-  margin-left: 300px;
-}
-.imagen-titulo3{
-  width: 100px; 
-  height: auto;
-  margin-left: 300px;
+  padding-top: 125px;
 }
 .dos-lineas {
   column-count: 1; 
   column-gap: 20px;
 }
-.map-container{
+.map-container, .texto-nosotros{
   display: flex;
   flex-direction: column;
 }
 .map-window {
   width: 250px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  margin-top: 45px;
   margin-bottom: 30px;
 }
-.mapa >img {
-  width: 400px;
-  height: 320px;
-  padding: auto;
+.mapa >img  {
+  width: 300px;
+  height: 520px;
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 20px;
@@ -647,29 +619,42 @@ h1, h3 {
   
 }
 .imagen__nosotros{
-  display: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 250px;
+  width: 300px;
+  height: 300px;
+}  
+
+.container-productos{
+  padding: 5px;
+  margin-bottom: 100px;
 }
 .container--contacto {
   max-width: 85%;
 }
-.sfmedia{
-  text-align: center;
-}
+
 footer{
   height: auto;
   position: absolute;
+}
+.sfmedia{
+  text-align: center;
 }
 .titulo-contacto{
   font-family: $fuentes-titulos;
   color: #6e6e6e;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
 }
 .titulo-nosotros{
-  margin-top: 30%;
+  margin-top: 15%;
 
 }
 .imagen-listadoLPC{
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-bottom: 20px;
   width: 100%;
   height: 100%;
 }
