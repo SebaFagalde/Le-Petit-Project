@@ -4,6 +4,13 @@ $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
 $fondo-cuerpo: rgb(222,242,247) linear-gradient(90deg, rgba(222,242,247,1) 25%, rgba(255,154,189,1) 99%);
 $primary: #ff9abd;
+@mixin titulos{
+  font-family: $fuentes-titulos;
+  color: #6e6e6e;
+  font-weight: bold;
+  font-size: 45px;
+
+}
 
 
 @keyframes myAnim {
@@ -17,8 +24,6 @@ $primary: #ff9abd;
 		transform: translateX(0);
 	}
 }
-
-
 body {
     background: rgb(255,154,189);
     background: $fondo-cuerpo;
@@ -161,7 +166,6 @@ body {
     justify-content: center;
     margin-bottom: 20px;
     text-decoration: none;
-
   }
   .card:hover {
     transform: translateY(-10px);
@@ -191,7 +195,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   
- }
+}
 
 .footer-links {
   list-style: none;
@@ -214,7 +218,7 @@ footer {
 }
 
 .footer-social {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .sfmedia{
   display: flex;
@@ -388,13 +392,14 @@ button{
   animation: myAnim 1s ease 0s 1 normal forwards;
   display: flex;
   align-items: flex-start;
-  padding-top: 140px;
-  padding-left: 15px;
+  padding-top: 20px;
+  padding-left: 5px;
 }
 .main--nosotros {
-  padding-top: 90px;
+  padding-top: 30px;
+  padding-bottom: 20px    ;
   display: flex;
-  justify-content:center;
+  justify-content: nowrap;
 
 }
 .imagen__nosotros { 
@@ -403,27 +408,29 @@ button{
   display: flex;
     
 }
-.texto-nosotros {
+.texto-nosotros p{
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 30%;
   padding-top: 10px;
-  padding-right: 20px;
+  padding-right: 5px;
   padding-bottom: 10px;
-  padding-left: 20px;
-  gap: 20px;
+  padding-left: 5px;
+  gap: 5px;
   
 }
-.titulo-contacto{
-  font-family: $fuentes-titulos;
-  color: #6e6e6e;
-  font-weight: bold;
-  font-size: 45px;
+.titulo-contacto { 
+  @include titulos();
 
+}
+.titulo-nosotros {
+  @include titulos();
+  display: flex;
+  justify-content:center;
+  margin-top: 20%;
 }
 .main--nosotros>h2 {
   display: flex;
-
   padding-top: 45px;
   padding-left: 20px;
   font-size: 60px; 
@@ -433,7 +440,7 @@ button{
   font-size: 16px; 
 }
 
-.container-nosotros h2{
+.container-productos h2{
   margin-top: 20px;
   margin-left: 20px;
   color: black;
@@ -445,7 +452,6 @@ button{
     background: $fondo-cuerpo;
 }
 .imagen-titulo{
-
   width: 75px; 
   height: auto;
   margin-left: 400px;
@@ -462,25 +468,25 @@ button{
   margin-left: 750px;
 }
 .titulo-historia{
-  font-family: $fuentes-titulos;
-  font-size: 40px;
+  @include titulos();
   text-align: center;
   margin-top: 50px;
 }
 .parrafo-historia{
   font-family: $fuentes-cuerpo;
- padding: 30px;
- column-count: 2;
- column-gap: 20px;
+  padding: 30px;
+  column-count: 2;
+  column-gap: 20px;
 
   
 }
-#TORTAS, #CUPCAKES, #CAFES, #MACARONS, section{
+#TORTAS, #CUPCAKES, #CAFES, {
   display: flex;
-  margin: top 100px; ;
+  margin-top: 100px; 
+  margin-bottom: 100px;
 }
 
-#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos {
+#TORTAS, #CUPCAKES, #CAFES, .lista--productos {
   
   list-style: none; 
   padding: 35px; 
@@ -491,9 +497,9 @@ button{
   margin-bottom: 50px;
 }
 
-#TORTAS, #CUPCAKES, #CAFES, #MACARONS, .lista--productos li {
+#TORTAS, #CUPCAKES, #CAFES, .lista--productos li {
   border: none; 
-  padding: 10px 0; 
+  padding: 0px 0; 
     &:hover, &.active {
     cursor: pointer;
     box-shadow: inset;
@@ -502,14 +508,16 @@ button{
   .dos-lineas {
     column-count: 2; 
     column-gap: 20px;
- 
 }
 .bondades-section{
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-
+.imagen-listadoLPC {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
 
 @media screen and (max-width: 720px) {
 
@@ -550,22 +558,21 @@ button{
   .imagen__logo:hover {
     transform: translateY(-4);
   }
-
- .hero-content--lepetit h1{
+.hero-content--lepetit h1{
   font-size: 60px;
   margin-top: 60px;
- }
- .contenedor--nosotros{
-  text-align: center;
- }
+}
+.contenedor--nosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: wrap;
+  }
+
 .texto-nosotros{
   margin-top: 10px;
- }
-.imagen__nosotros {
-  display: none;
-  
- }
- @keyframes imagen__logo {
+}
+
+@keyframes imagen__logo {
 	0% {
 		transform: rotate(0);
 	}
@@ -573,9 +580,9 @@ button{
 	100% {
 		transform: rotate(360deg);
 	}
- }
+}
 
- .lista--productos{
+.lista--productos{
   flex-direction: row; 
   flex-wrap: wrap; 
   margin-left: 10px; 
@@ -586,7 +593,7 @@ h1, h3 {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
- }
+}
 
 .lista--productos li {
   flex: 0 0 50%; 
@@ -639,20 +646,31 @@ h1, h3 {
   column-width: 100px;
   
 }
+.imagen__nosotros{
+  display: none;
+}
 .container--contacto {
-  max-width: 70%;
+  max-width: 85%;
 }
 .sfmedia{
   text-align: center;
 }
 footer{
   height: auto;
+  position: absolute;
 }
 .titulo-contacto{
   font-family: $fuentes-titulos;
   color: #6e6e6e;
   font-weight: bold;
   font-size: 35px;
+}
+.titulo-nosotros{
+  margin-top: 30%;
 
+}
+.imagen-listadoLPC{
+  width: 100%;
+  height: 100%;
 }
 }
