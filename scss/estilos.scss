@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?famiV<wap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap');
 $fuentes-titulos: 'Inter', sans-serif;
 $fuentes-cuerpo: 'Roboto', sans-serif;
@@ -326,7 +326,6 @@ button:hover {
   background-color: #ff9abd;
 }
 
- 
 .map-container {
   display: flex;
   height: cover;
@@ -507,7 +506,49 @@ padding-top: 15%;
 /*arrancan las media queries*/
 
 @media screen and (max-width: 720px) {
+/*MENU HAMBURGUESA*/
 
+  .nav-links--lepetit {
+      display: none;
+      flex-direction: column;
+      background-color:#6e6e6e;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav-link--lepetit .active {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+      cursor: pointer;
+      z-index: 1;
+  }
+
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color:#6e6e6e;
+      margin: 5px auto;
+      transition: 0.4s;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+      opacity: 2;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+/*TERMINA MENU HAMBURGUESA*/
   .container--lepetit {
     background-color: #ff9abd;
     flex-direction: column;
@@ -540,7 +581,7 @@ padding-top: 15%;
   .imagen__logo {
     height: 90px;
     width: 90px;
-    animation: imagen__logo 3s ease 5s 1 normal both;
+    animation: imagen__logo 2s ease 3s 1 normal both;
   }
   .bondades-section{
     padding-top: 50px;
