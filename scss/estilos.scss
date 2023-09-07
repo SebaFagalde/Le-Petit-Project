@@ -326,7 +326,6 @@ button:hover {
   background-color: #ff9abd;
 }
 
- 
 .map-container {
   display: flex;
   height: cover;
@@ -508,10 +507,11 @@ padding-top: 15%;
 
 @media screen and (max-width: 720px) {
 /*MENU HAMBURGUESA*/
+
   .nav-links--lepetit {
       display: none;
       flex-direction: column;
-      background-color: #333;
+      background-color:#6e6e6e;
       position: absolute;
       top: 60px;
       left: 0;
@@ -532,7 +532,7 @@ padding-top: 15%;
   .bar {
       width: 25px;
       height: 3px;
-      background-color: #fff;
+      background-color:#6e6e6e;
       margin: 5px auto;
       transition: 0.4s;
   }
@@ -542,7 +542,7 @@ padding-top: 15%;
   }
 
   .menu-toggle.active .bar:nth-child(2) {
-      opacity: 0;
+      opacity: 2;
   }
 
   .menu-toggle.active .bar:nth-child(3) {
@@ -581,7 +581,7 @@ padding-top: 15%;
   .imagen__logo {
     height: 90px;
     width: 90px;
-    animation: imagen__logo 3s ease 5s 1 normal both;
+    animation: imagen__logo 2s ease 3s 1 normal both;
   }
   .bondades-section{
     padding-top: 50px;
