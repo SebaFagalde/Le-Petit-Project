@@ -9,6 +9,8 @@ $carousel-control-opacity:           .5;
 $carousel-control-hover-opacity:     .9;
 $carousel-control-transition:        opacity .15s ease;
 $carousel-caption-width:  35%;
+$carousel-caption-padding-y: 125px;
+$carousel-caption-width: 70%;
 
 @mixin titulos{
   font-family: $fuentes-titulos;
@@ -77,11 +79,11 @@ body {
   }
   
   .nav-links--lepetit li {
-    padding: 15px;
+    padding: 10px;
   }
   
   .nav-links--lepetit a {
-    color: #ffffffe3;
+    color: #fffffff8;
     text-decoration: none;
     font-size: 25px;
   }
@@ -462,22 +464,6 @@ padding-top: 15%;
 .body_lepetit_productos{
   background: $fondo-cuerpo;
 }
-.imagen-titulo{
-  width: 75px; 
-  height: auto;
-  margin-left: 400px;
-  
-}
-.imagen-titulo2{
-  width: 100px; 
-  height: auto; 
-  margin-left: 800px;
-}
-.imagen-itulo3{
-  width: 150px; 
-  height: auto; 
-  margin-left: 750px;
-}
 .titulo-historia{
   @include titulos();
   text-align: center;
@@ -505,7 +491,7 @@ padding-top: 15%;
 
 /*arrancan las media queries*/
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 450px) {
 /*MENU HAMBURGUESA*/
 
   .nav-links--lepetit {
@@ -513,7 +499,7 @@ padding-top: 15%;
       flex-direction: column;
       background-color:#6e6e6e;
       position: absolute;
-      top: 60px;
+      top: 20px;
       left: 0;
       width: 100%;
       text-align: center;
@@ -521,6 +507,7 @@ padding-top: 15%;
 
   .nav-link--lepetit .active {
       display: flex;
+
   }
 
   .menu-toggle {
@@ -575,7 +562,7 @@ padding-top: 15%;
   }
 
   .nav-links--lepetit li {
-    margin: 0px 0;
+    margin: 5px;
     color: black;
   }
   .imagen__logo {
@@ -587,6 +574,10 @@ padding-top: 15%;
     padding-top: 50px;
     padding-bottom: 150px;
     } 
+
+  #CUPCAKES{
+    margin-bottom: 60PX;
+  }
   
 .hero-content--lepetit h1{
   font-size: 60px;
@@ -627,7 +618,7 @@ h1, h3 {
 
 .lista--productos li {
   flex: 0 0 50%; 
-  padding: 10px; 
+  padding: 5px; 
 }
 .map-container{
   width: auto ;
@@ -643,18 +634,27 @@ h1, h3 {
 }
 .map-window {
   width: 250px;
-  padding: 20px;
+  padding: 5px;
   border: 3px solid #ccc;
   border-radius: 15px;
   margin-top: 45px;
   margin-bottom: 30px;
 }
+.map-window2{
+  margin: 5px;
+  font-family:$fuentes-titulos;
+  font-size: 75px;
+}
+.mapa{
+  padding-bottom: 200px;
+}
 .mapa >img  {
   width: 300px;
-  height: 520px;
+  height: 420px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin: 20px;
+  margin: 0px;
+  padding-bottom:10px;
 }
 .parrafo-historia{ 
   margin-bottom: 45px;
@@ -665,6 +665,8 @@ h1, h3 {
 .imagen__nosotros{
   display: flex;
   justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 250px;
   width: 300px;
   height: 300px;
@@ -695,6 +697,14 @@ footer{
   margin-top: 15%;
 
 }
+.titulo-conocenos{
+  display: flex;
+  height: cover;
+  justify-content: center;
+  align-items: center;  
+  margin-top:   50px;
+
+}
 .imagen-listadoLPC{
   margin-top: 20px;
   margin-right: 5px;
@@ -702,26 +712,9 @@ footer{
   width: 100%;
   height: 100%;
 }
+.carousel_container{
+  display: flex;
+  padding-bottom: 45px;
+  margin-bottom: 55px;
 }
-@media screen and (max-width: 360px){
-  .container--lepetit {
-    background-color: #ff9abd;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-
-  .nav-links--lepetit {
-    background-color: #f0f0f088;
-    color: black;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    margin-top: 10px; 
-    right: 0;
-    padding: 0px;
-    border-radius: 5px;
-    display: none; 
-    font-size: 15px;
-  }
 }
